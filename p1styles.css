@@ -1,0 +1,364 @@
+html,
+body,
+section,
+p,
+header,
+nav,
+footer,
+div,
+article,
+aside,
+ol,
+ul,
+li,
+h1,
+h6 {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Body */
+body {
+	background-color: #e6e6e6;
+	font-family: Verdana;
+	font-size: 12px;
+}
+
+div#container {
+	width: 810px;
+	background-color: #fff;
+	border-radius: 8px;
+	margin: 10px auto;
+	padding: 10px;
+	box-shadow: 1px 1px 2px #a2a2a2, -1px -1px 2px #a2a2a2;
+	background: linear-gradient(to bottom, white 97%, black 115%)
+}
+
+/* Some default styles for some tags */
+nav a,
+aside a {
+	text-transform: uppercase;
+}
+
+h2,
+h3 {
+	margin: 0;
+}
+
+ul li a {
+	text-decoration: none;
+}
+
+/* User Search Top*/
+.user-search {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.user-search ul {
+	display: flex;
+	list-style-type: none;
+	margin: 0px 19px 2px 0px;
+	font-size: 11px;
+}
+
+.user-search ul li {
+	border-right: 1px solid black;
+	padding: 0px 9px 0px 9px;
+}
+
+.user-search input[name='search'] {
+	width: 77px;
+	margin-bottom: 9px;
+}
+
+.user-search button {
+	border: 1px black solid;
+	height: 18px;
+	font-size: 10px;
+	width: 47px;
+}
+
+/* Page-Name Banner */
+.page-name {
+	position: relative;
+}
+
+.page-name img {
+	width: 100%;
+	display: block;
+}
+
+.page-name h1 {
+	position: absolute;
+	top: 0;
+	color: white;
+	word-spacing: -4px;
+	font-size: 34px;
+	margin: 25px 0px 0px 24px;
+	font-weight: 100;
+	letter-spacing: 7px;
+}
+
+.page-name p {
+	font-style: italic;
+	font-size: 12px;
+	color: white;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 0px 41px 21px 0px;
+	letter-spacing: 1px;
+	font-weight: 600;
+}
+
+/* Horizantal Navigation Bar */
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 24px;
+	background: linear-gradient(to bottom, #556e89 0%, #9bccfd 5%, #7db8e9 32%, #3185b6 79%, #1573a4 100%);
+	font-weight: 600;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	font-size: 12px;
+	justify-content: center;
+	margin-left: 7px;
+}
+
+nav ul li a {
+	color: #e6e5e9;
+}
+
+nav ul li {
+	border-right: 1px solid black;
+	padding: 0px 11px 0px 11px;
+}
+
+/* Main Body */
+.main-body {
+	display: flex;
+}
+
+/* Aside */
+aside {
+	width: 182px;
+}
+
+aside ul {
+	list-style: none;
+	width: 179px;
+}
+
+aside ul li a {
+	color: black;
+	margin-left: 6px;
+}
+
+aside ul li:before {
+	content: '•';
+}
+
+.main-body aside ul li:nth-child(1) {
+	list-style-type: none;
+	padding: 9px 0px 0px 3px;
+}
+
+aside ul li:nth-child(1)::before {
+	content: '';
+	list-style-type: none;
+}
+
+.main-body aside ul li {
+	background: linear-gradient(to bottom, rgba(225,224,225,1) 0%,rgba(242,241,242,1) 1%,rgba(245,245,245,1) 2%,rgba(239,240,239,1) 5%,rgba(231,231,231,1) 31%,rgba(208,208,208,1) 79%,rgba(202,201,201,1) 96%,rgba(204,203,202,1) 100%);
+	height: 29.2px;
+	font-size: 10px;
+	padding: 7px 0px 0px 6px;
+	font-weight: 600;
+}
+
+/* Horizantal Line */
+aside hr {
+	margin-top: 39px;
+}
+
+/* Nasa Info */
+.nasa-info {
+	display: flex;
+	font-size: 11px;
+	width: 182px;
+	line-height: 16px;
+	color: grey;
+}
+
+.nasa-info img {
+	height: 100%;
+	object-fit: cover;
+}
+
+/* Department Info 1 */
+main {
+	margin-left: 17px;
+}
+
+.direct-to-page {
+	display: flex;
+	font-size: 10px;
+	margin: 5px 0px 0px -7px;
+	gap: 4px;
+}
+
+.direct-to-page ul li {
+	list-style: none;
+}
+
+.direct-to-page span {
+	font-size: 9px;
+	letter-spacing: -5px;
+	margin: auto 0px auto 0px;
+}
+
+.direct-to-page>p {
+	margin-left: 6px;
+}
+
+/* Article related information. */
+.article-related-info {
+	margin-top: 24px;
+}
+
+.article-related-info h3 {
+	margin-top: 8px;
+	font-size: 13px;
+}
+
+.article-related-info>p {
+	margin: 20px 0px 0px 0px;
+	font-size: 12px;
+	line-height: 20px;
+	width: 95%;
+}
+
+/* For the texts which are links */
+.same-style {
+	font-weight: 600;
+	text-decoration: none;
+	color: #0066af;
+}
+
+/* Department-info-2 */
+.department-info-2 {
+	margin: 15px 0px 0px 0px;
+	line-height: 21px;
+	display: flex;
+}
+
+/* Section-division-1 */
+.section-division-1 ul li a {
+	color: #0066af;
+}
+
+.section-division-1 ul {
+	margin: 6px 0px 0px 25px;
+	font-size: 13px;
+	line-height: 36px;
+	font-weight: 600;
+	list-style: none;
+}
+
+/* Section-division-2 */
+.section-division-2 {
+	border: 1px solid grey;
+	padding: 7px;
+	width: 100%;
+	margin: 5px 13px 0px 0px;
+}
+
+.section-division-2 p {
+	word-spacing: 1px;
+	line-height: 14px;
+	width: 95%;
+	font-size: 10px;
+	/* margin: 0px 0px 0px 0px; */
+}
+
+/* Footer */
+footer ul {
+	display: flex;
+	list-style: none;
+	margin: 0px 0px 0px 2px;
+}
+
+footer a,
+#footer-span,
+.user-search a {
+	color: #0066af;
+}
+
+footer {
+	margin: 74px 0px 0px 0px;
+	font-size: 10px;
+	/* padding: 10px; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* line-height: 14px; */
+}
+
+footer ul li {
+	border-right: 1px solid black;
+	padding: 0px 10px 0px 10px;
+}
+
+.address {
+	display: flex;
+	line-height: 15px;
+	color: grey;
+	gap: 8px;
+	margin-left: 3px;
+}
+
+.address a {
+	border-left: 1px solid black;
+	padding: 0px 0px 0px 8px;
+	text-decoration: none;
+}
+
+/* removing some extra borders included */
+.user-search ul li:nth-child(6),
+nav ul li:nth-child(6),
+footer ul li:nth-child(6) {
+	border: none;
+}
+
+/* Hover */
+li :hover {
+	color: #333;
+	cursor: pointer;
+}
+
+aside ul li a:hover,
+footer a:hover {
+	color: rgb(255, 25, 25);
+}
+
+.direct-to-page a:hover,
+.article-related-info a:hover,
+.section-division-1 a:hover {
+	color: rgb(188, 122, 15);
+}
+
+form input:focus {
+	background-color: #76ccf4;
+}
+form button:hover {
+	background-color: #3db5eb;
+	color: #fff;
+	transition: all 0.3s ease;
+}
